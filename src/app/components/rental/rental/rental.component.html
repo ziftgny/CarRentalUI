@@ -1,0 +1,18 @@
+<div class="table-responsive" style="max-height: 50vh; overflow-y: auto;">
+  <table class="table"  >
+      <thead>
+        <tr>
+          <th>Car</th>
+          <th>Customer</th>
+          <th>RentDate</th>
+          <th>ReturnDate</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let rental of rentals" >
+          <td class="p-2">{{rental.carName}}</td>
+          <td class="p-2">{{rental.customerName}}</td>
+          <td class="p-2">{{rental.rentDate}}</td>
+          <td class="p-2">{{rental.returnDate}}</td>
+      </tr>
+    </table>
+  </div>
